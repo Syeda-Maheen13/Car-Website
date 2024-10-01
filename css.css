@@ -1,0 +1,393 @@
+:root{
+  --primary-color: rgb(231, 55, 55);
+}
+.navbar{
+    background-color: #fff;
+    height: 70px;
+    margin: 13px;
+border-radius: 50px;
+}
+.navbar-nav .nav-item {
+   margin-right: 20px;
+}
+.navbar-nav .dropdown-menu {
+    border: none;
+    
+}
+.navbar-nav .nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active{
+    color:black;
+}
+.container-fluid .navbar-brand {
+  font-weight: 500;
+  color: black;
+  font-size: 24px;
+  transition: 0.3s color; 
+  padding: 8px 20px;
+ }
+ .container-fluid .navbar-brand:hover{
+  color: var(--primary-color);
+ }
+ 
+ .login-button{
+     background-color: black;
+     color: white;
+     margin: 5px;
+     padding: 8px 20px;
+     border-radius: 50px;
+     text-decoration: none;
+     transition: 0.3s background-color;
+ 
+ }
+ .login-button:hover{
+  background-color: var(--primary-color);
+     color: white;
+ }
+@media (min-width:991px) {
+    
+
+.nav-link::before{
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 0;
+height: 2px;
+background-color: var(--primary-color);
+visibility: hidden;
+transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+visibility: visible;
+}
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+.overlay h1{
+    width: 500px;
+} 
+
+.unique-search-bar {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(222, 222, 222, 0.7);
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+   
+  }
+  
+  .unique-search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    background-color: transparent;
+  }
+  
+  .unique-search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color:black;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .unique-search-bar button:hover {
+    background-color: var(--primary-color);
+  }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .text{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  margin: 50px;
+    
+}
+
+.card-img {
+
+    height: 220px;
+    object-fit: cover;
+  }
+
+.card-body .btn-brand{
+    color: white;
+   background-color: var(--primary-color);
+    border-radius: 0px;
+    font-size: 18px;
+}
+.card-body .btn-brand:hover{
+  background-color: rgb(230, 228, 228);
+}
+
+#sec{
+  background-color:black;
+  margin-top:  80px;
+}
+#slider{
+  height: 100vh;
+}
+
+
+
+
+
+
+.heading{
+  text-align:center;
+}
+.heading span{
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.heading p {
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+.cars-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.cars-container .box{
+  flex: 1 1 20rem;
+  position: relative;
+  height: 230px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.cars-container .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.cars-container .box img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.cars-container .box h2{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+
+.cars-container .box:hover h2{
+  background: var(--primary-color);
+  color: white;
+}
+
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+
+}
+
+.about-text span{
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.about-text h2{
+  font-size: 1.7rem;
+}
+.about-text p{
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem ;
+}
+.about-text .btn{
+  max-width: 120px;
+  border-radius: 0;
+  background-color: var(--primary-color);
+  color: white;
+}
+.about-text .btn:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.parts-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.parts-container .box{
+  flex: 1 1 17rem;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e5e5;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+}
+.parts-container .box:hover{
+  transform: scale(1.1);
+}
+.parts-container .box img{
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
+.parts-container .box h3{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.parts-container .box span{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.parts-container .box .btn{
+  max-width: 120px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0;
+}
+.parts-container .box .btn:hover{
+  background-color: black;
+}
+.parts-container .box .details{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 1.8rem;
+right: 1rem;
+font-size: 1rem;
+color: black;
+text-decoration: none;
+}
+
+.parts-container .box .details:hover{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.blog-container .box {
+  flex: 1 1 21rem;
+  margin: 0 1rem; 
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.blog-container .box img {
+  height: 220px;
+  width: 100%; 
+  object-fit: cover; 
+}
+
+.blog-container .box:hover {
+  background: #f3f3f3;
+}
+
+.blog-container .box span {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.blog-container h3 {
+  font-size: 1.2rem;
+}
+
+.blog-container .box p {
+  font-size: 0.938rem;
+  margin: 4px 0; 
+}
+
+.blog-container .box .blog-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.blog-container .box .blog-btn:hover {
+  color: black;
+  transition: 0.4s; 
+}
+
+
+
+
+
+
+/* second page used car */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
