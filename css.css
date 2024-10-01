@@ -1,6 +1,7 @@
 :root{
   --primary-color: rgb(231, 55, 55);
 }
+
 .navbar{
     background-color: #fff;
     height: 70px;
@@ -47,6 +48,8 @@ border-radius: 50px;
   background-color: var(--primary-color);
      color: white;
  }
+
+
 @media (min-width:991px) {
     
 
@@ -261,7 +264,7 @@ visibility: visible;
   margin-top: 2rem;
 }
 .parts-container .box{
-  flex: 1 1 17rem;
+  flex: 1 1 15rem;
   position: relative;
   padding: 20px;
   display: flex;
@@ -375,9 +378,7 @@ text-decoration: none;
 
 
 
-/* second page used car */
-
-
+/* Review Card */
 
 
 
