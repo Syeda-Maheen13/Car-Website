@@ -14,6 +14,7 @@ function handleButtonClick() {
 
 
 
+
 $(window).on('scroll', function(){
     const navbar = $('#navbar');
     if ($(this).scrollTop() > 50) {
